@@ -1,5 +1,5 @@
 # WiChat
-Aplikacja służacą do komunikowania się z innymi użytkownikami poprzez wiadomości prywatne lub chaty grupy (tzw. kanały).
+Aplikacja służacą do komunikowania się z innymi użytkownikami poprzez wiadomości prywatne lub chaty grupowe (tzw. kanały).
 
 ### Technologie
 Aplikacja zostanie zbudowana w oparciu o następujące technologie:
