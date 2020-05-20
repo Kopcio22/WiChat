@@ -11,3 +11,4 @@ Aplikacja zostanie zbudowana w oparciu o następujące technologie:
 
 ### Kalendarium
 #### 21.05
+* Przygotowano środowisko front-endowe do developmentu
