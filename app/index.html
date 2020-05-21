@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>wichat</title>
+    <title>WiChat</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/main.css -->
@@ -18,16 +18,33 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
+    <main>
+      <div class="login">
+        <div class="login__header">
+          <h1>WiChat</h1>
+        </div>
+        <div class="login__form-container">
+          <form action="" class="form register-form hidden">
+            <label><input type="text" name="login" id="login" placeholder="Login"></label>
+            <label><input type="email" name="email" id="email" placeholder="E-mail"></label>
+            <label><input type="password" name="password" id="password" placeholder="Hasło"></label>
+            <label><input type="password" name="rp-password" id="repeatPassword" placeholder="Powtórz hasło"></label>
+            <button class="button">Zarejestruj się</button>
+            <p class="form__switch">Masz już konto? <a href="#">Zaloguj się.</a></p>
+          </form>
+          <form action="" class="form login-form">
+            <label>
+              <input type="text" name="login" id="login" placeholder="Login">
+            </label>
+            <label>
+              <input type="password" name="password" id="password" placeholder="Hasło">
+            </label>
+            <button class="button">Zaloguj się</button>
+            <p class="form__switch">Nie masz konta? <a href="#">Zarejestruj się.</a></p>
+          </form>
+        </div>
+      </div>
+    </main>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -37,11 +54,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-    <!-- build:js scripts/vendor.js -->
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- endbuild -->
-    <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

@@ -1,0 +1,56 @@
+.login {
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    @include for-tablet-landscape {
+        width: 50%;
+    }
+    @include for-tablet-portrait {
+        width: 60%;
+    }
+    @include for-phones {
+        width: 90%;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__form-container {
+        background: $primaryColor;
+        padding: 40px 0;
+        border-radius: $border-radius;
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
+            color: $lightFontColor;
+            &.hidden {
+                transform: scale(1,0);
+                height: 0;
+            }
+            input {
+                background: $lightFontColor;
+                border: none;
+                padding: 10px;
+                border-radius: $border-radius;
+                margin-bottom: 10px;
+            }
+            .form__switch {
+                margin-top: 20px;
+                font-size: 14px;
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        cursor: pointer;
+                        color: darken($lightFontColor, 15);
+                    }
+                }
+            }
+        }
+    }
+}
